@@ -1,0 +1,30 @@
+{
+  "name": "macedonia",
+  "version": "1.0.0",
+  "description": "A website for Macedonia Laserwash",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmeganshaw/macedonia.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "megan shaw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmeganshaw/macedonia/issues"
+  },
+  "homepage": "https://github.com/mmeganshaw/macedonia#readme"
+}
