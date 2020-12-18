@@ -1,0 +1,38 @@
+.black {
+    background-color: black;
+}
+
+.black-text {
+    color: white;
+}
+
+.glow {
+    text-shadow: 0 0 10px #fff
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+.down {
+    padding-top: 2px;
+}
+
+.orange-text {
+    color: orange;
+}
+
+p:hover,
+h1:hover,
+a:hover li:hover {
+    text-shadow: 0 0 50px #fff
+}
+
+.first-section-padding-upper {
+    padding-top: 5rem;
+
+}
+
+.divider-size {
+    width: 110px;
+}
