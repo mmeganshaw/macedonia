@@ -1,3 +1,11 @@
+html {
+    font-family: 'Rubik', 'Open Sans', sans-serif;
+}
+
+p {
+    font-weight: 300;
+}
+
 .black {
     background-color: black;
 }
@@ -23,16 +31,59 @@
 }
 
 p:hover,
-h1:hover,
 a:hover li:hover {
     text-shadow: 0 0 50px #fff
 }
 
 .first-section-padding-upper {
-    padding-top: 3rem;
+    padding-top: 1rem;
 
 }
 
 .divider-size {
     width: 110px;
 }
+
+.landing {
+    position: relative;
+    background: url('../images/Header-Main-02.png') no-repeat center center/cover;
+    background-color: black;
+    height:90vh;
+  }
+
+  .landing-inner {
+    color: #fff;
+    padding-top: 2rem;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .fat {
+      font-weight: 900;
+  }
+
+  .kinda-fat {
+      font-weight: 700;
+  }
+
+  .not-fat {
+    font-weight: 500;
+}
+
+  .thin {
+      font-weight: 300;
+  }
+
+  footer {
+    background-color: black;
+    overflow: auto;
+    background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 18%, rgba(25,17,7,1) 42%, rgba(115,95,67,1) 72%, rgba(181,128,51,1) 85%, rgba(251,177,70,1) 100%);
+  }
+
