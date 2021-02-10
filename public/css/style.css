@@ -84,6 +84,20 @@ a:hover li:hover {
     background-color: black;
     overflow: auto;
     background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,1) 18%, rgba(25,17,7,1) 42%, rgba(115,95,67,1) 72%, rgba(181,128,51,1) 85%, rgba(251,177,70,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 18%, rgba(25,17,7,1) 42%, rgba(115,95,67,1) 72%, rgba(181,128,51,1) 85%, rgba(251,177,70,1) 100%);
+  }
+
+  .parralax-text {
+        color: white;
+        font-weight: 700;
+        text-shadow: 0 0 10px #fff;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
   }
 
