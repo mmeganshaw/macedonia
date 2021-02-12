@@ -15,7 +15,11 @@ p {
 }
 
 .glow {
-    text-shadow: 0 0 10px #fff
+    text-shadow: 0 0 10px #fff;
+}
+
+.box-glow {
+    box-shadow: 0 0 10px #fff;
 }
 
 .rounded {
@@ -48,7 +52,7 @@ a:hover li:hover {
     position: relative;
     background: url('../images/Header-Main-02.png') no-repeat center center/cover;
     background-color: black;
-    height:90vh;
+    height:75vh;
   }
 
   .landing-inner {
@@ -101,3 +105,7 @@ a:hover li:hover {
         text-align: center;
   }
 
+  .map {
+    height: 50vh;
+    filter: grayscale(100%) invert(92%) contrast(83%);
+  }
