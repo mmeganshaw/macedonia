@@ -64,14 +64,14 @@
                                     <div style="border-style: solid; border-radius: 15px; border-color: orange; border-width: 1px;"
                                         class="input-field col s12">
                                         <input placeholder="Full Name" id="name" type="text" class="validate"
-                                            style="border-bottom: none;">
+                                            style="border-bottom: none; color: white;">
                                     </div>
                                 </div>
                                 <div class="row">
                                    <div style="border-style: solid; border-radius: 15px; border-color: orange; border-width: 1px;"
                                      class="input-field col s12">
                                      <input placeholder="Email" id="email" type="text" class="validate"
-                                         style="border-bottom: none;">
+                                         style="border-bottom: none; color: white;">
                                    </div>
                                 </div>
                                <div class="row">
@@ -86,7 +86,7 @@
                         <!-- button -->
                         <div class="row center-align" style="padding-bottom: 1rem; ">
                             <div class="col s12">
-                                <button id="submit" style="background-color: orange; border-radius: 10px;"
+                                <button id="button" style="background-color: orange; border-radius: 10px;"
                                     class="btn-large waves-effect waves-light box-glow" type="submit" name="action">Submit
                                 </button>
                             </div>
@@ -141,17 +141,37 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script> 
     <script>
         $(document).ready(function () {
+            $("#button").on("click", function(event) {
+
+                var messageObject = {
+                    fullName: $("#name").val().trim(),
+                    userEMail: $("#email").val().trim(),
+                    userMessage: $("#message").val().trim()
+                }
+                // var fullName = $("#name").val().trim();
+                // var userEmail = $("#email").val().trim();
+                // var userMessage = $("#message").val().trim();
+                console.log(messageObject);
+
+                function sendEmail() {
+                    Email.send({
+                        SecureToken: "05257faf-b229-4024-9950-ac74fe75cf6d",
+                        To: "mmeganshaw@gmail.com",
+                        From: "emailprotocol6789@gmail.com",
+                        Subject: "this was a test",
+                        Body: "Well this was easy",
+                    })
+                    .then(function (message) {
+                        alert("email sent successfully");
+                    })
+                }
+                sendEmail();
+            })
+
             $('.parallax').parallax();
-
-            // var contact_Object = {
-            //   full: $("#name").val().trim(), 
-            // };
-
-            const full_name = $("#name").val().trim();
-
-            console.log(full_name);
         });
     </script>
 </body>
