@@ -63,7 +63,7 @@
                                 <div class="row">
                                     <div style="border-style: solid; border-radius: 15px; border-color: orange; border-width: 1px;"
                                         class="input-field col s12">
-                                        <input placeholder="Full Name" id="last_name" type="text" class="validate"
+                                        <input placeholder="Full Name" id="name" type="text" class="validate"
                                             style="border-bottom: none;">
                                     </div>
                                 </div>
@@ -124,12 +124,7 @@
                     <span>
                         macedonialaserwash@gmail.com
                     </span>
-                    <!-- <div class="hide-on-med-and-down">
-                        <hr style="width: 25rem;">
-                    </div>
-                    <div class="hide-on-large-only">
-                        <hr style="width: 200px;">
-                    </div> -->
+
                 </div>
             </div>
            
@@ -149,6 +144,14 @@
     <script>
         $(document).ready(function () {
             $('.parallax').parallax();
+
+            // var contact_Object = {
+            //   full: $("#name").val().trim(), 
+            // };
+
+            const full_name = $("#name").val().trim();
+
+            console.log(full_name);
         });
     </script>
 </body>
