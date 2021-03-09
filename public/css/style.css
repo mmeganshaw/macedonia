@@ -109,3 +109,13 @@ a:hover li:hover {
     height: 50vh;
     filter: grayscale(100%) invert(92%) contrast(83%);
   }
+
+  .form-submit {
+    padding: 1rem; 
+    border-style: solid; 
+    color: orange; 
+    height: 3rem; 
+    border-radius: 15px; 
+    border-color: orange; 
+    border-width: 1px;
+  }
