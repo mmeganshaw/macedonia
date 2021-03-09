@@ -55,6 +55,13 @@ a:hover li:hover {
     height:75vh;
   }
 
+  .landing-faqs {
+    position: relative;
+    background: url('../images/faqs.jpg') no-repeat center center/cover;
+    background-color: black;
+    height:75vh;
+  }
+
   .landing-inner {
     color: #fff;
     padding-top: 2rem;
@@ -66,6 +73,19 @@ a:hover li:hover {
     align-items: left;
     justify-content: left;
     text-align: left;
+  }
+
+  .landing-inner-faqs {
+    color: #fff;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .fat {
