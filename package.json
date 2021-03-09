@@ -12,7 +12,10 @@
     "nodemon": "^2.0.7",
     "path": "^0.12.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0"
+  },
   "scripts": {
     "test": "test",
     "start": "node server.js"
