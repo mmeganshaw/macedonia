@@ -54,72 +54,23 @@
                 <h2 class="orange-text glow center">Questions? <span class="white-text glow">Contact us below</span> </h2>
             </div>
         </div>
-        <div class="row hide-on-med-and-down">
+        <div class="row">
             <div class="col s12">
-                    <!-- form container desktop -->
-                    <div class="container center-align" id="form-container">
-                        <div class="row">
-                            {{msg}}
-                            <form method="POST" action="send">
-                                <div class="row">
-                                    <div class="col s12">
-                                    <input class="form-submit input-field" style="width: 100%; padding: 1rem; border-style: solid; color: orange; height: 3rem; border-radius: 15px; border-color: orange; border-width: 1px;" placeholder="Full Name" type="text" name="name" style="color: orange;">
-                                </div>
-                                </div>
-                                <p>
-                                    <input type="email" name="email" Placeholder="Email" style="width: 100%; padding: 1rem; border-style: solid; color: orange; height: 3rem; border-radius: 15px; border-color: orange; border-width: 1px;">
-                                </p>
-                                <p>
-                                    <input type="text" name="message" Placeholder="Message" style="width: 100%; padding: 1rem; border-style: solid; color: orange; height: 6rem; border-radius: 15px; border-color: orange; border-width: 1px;">
-                                </p>
-                                <p>
-                                     <button id="button" style="background-color: orange; border-radius: 10px;"
-                                    class="btn-large waves-effect waves-light box-glow" type="submit" name="action">Submit
-                                </button>
-                                
-                                </p>
+                    <div class="container center" style="max-width: 600px;">
+                            <form action="https://formsubmit.co/mmeganshaw@gmail.com" method="POST">
+                                <input style="border: 1px solid orange; border-radius: 20px; padding-left: 5px; color: orange; margin-bottom: 1rem;" type="text" placeholder="Full Name" name="name" required>
+                                <input style="border: 1px solid orange; border-radius: 20px; padding-left: 5px; color: orange; margin-bottom: 1rem;" type="email" placeholder="Email" name="email" required>
+                                <input style="border: 1px solid orange; border-radius: 20px; padding-left: 5px; color: orange;" type="text" placeholder="Message" name="message" required>
+                                <input type="hidden" name="_next" value="http://www.macedonialaserwash.com/thank-you">
+                                <button class="waves-effect waves-light btn orange glow" style="margin-top: 1rem;" type="submit">Send</button>
                             </form>
-                        </div>
-                        <!-- button -->
 
-                         
-                       
                     </div>
+                        
+                </div>
             </div>
         </div>
-        <div class="row hide-on-large-only">
-            <div class="col s12">
-                    <!-- form container desktop -->
-                    <div class="container center-align" id="form-container">
-                        <div class="row">
-                            {{msg}}
-                            <form method="POST" action="send">
-                                <div class="row">
-                                    <div class="col s12">
-                                    <input class="form-submit input-field" style="width: 18rem; padding: 1rem; border-style: solid; color: orange; height: 3rem; border-radius: 15px; border-color: orange; border-width: 1px;" placeholder="Full Name" type="text" name="name" style="color: orange;">
-                                </div>
-                                </div>
-                                <p>
-                                    <input type="email" name="email" Placeholder="Email" style="width: 18rem; padding: 1rem; border-style: solid; color: orange; height: 3rem; border-radius: 15px; border-color: orange; border-width: 1px;">
-                                </p>
-                                <p>
-                                    <input type="text" name="message" Placeholder="Message" style="width: 18rem; padding: 1rem; border-style: solid; color: orange; height: 6rem; border-radius: 15px; border-color: orange; border-width: 1px;">
-                                </p>
-                                <p>
-                                     <button id="button" style="background-color: orange; border-radius: 10px;"
-                                    class="btn-large waves-effect waves-light box-glow" type="submit" name="action">Submit
-                                </button>
-                                
-                                </p>
-                            </form>
-                        </div>
-                        <!-- button -->
-
-                         
-                       
-                    </div>
-            </div>
-        </div>
+        
     </div>
     <div class="parallax-container">
         <div class="parallax"><img src="/public/images/photo2-02.png"></div>
@@ -172,6 +123,23 @@
                     $('select').formSelect();
                     $('.modal').modal();
                     $('.parallax').parallax();
+
+            $('#button1').click(function () {
+                console.log("this is clicking at least")
+                $.ajax({
+                    method: 'POST',
+                    url: 'https://formsubmit.co/ajax/mmeganshaw@gmail.com',
+                    dataType: 'json',
+                    accepts: 'application/json',
+                    data: {
+                        name: $('#fullName1').val(),
+                        email: $('#email1').val(),
+                        message: $('#message1').val()
+                    },
+                    success: (data) => console.log(data),
+                    error: (err) => console.log(err)
+                });
+            })
         });
     </script>
    
