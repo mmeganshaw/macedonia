@@ -1,6 +1,5 @@
 const express = require('express');
 const engine = require('express-handlebars').engine;
-const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 
