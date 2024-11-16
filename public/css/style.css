@@ -44,25 +44,30 @@ a:hover li:hover {
 
 }
 
+
 .divider-size {
     width: 110px;
+}
+
+.brand-padding {
+    width: 185px;
 }
 
 .landing {
     position: relative;
     background: url('../images/Header-Main-02.png') no-repeat center center/cover;
     background-color: black;
-    height:75vh;
-  }
+    height: 75vh;
+}
 
-  .landing-faqs {
+.landing-faqs {
     position: relative;
     background: url('../images/faqs.jpg') no-repeat center center/cover;
     background-color: black;
-    height:75vh;
-  }
+    height: 75vh;
+}
 
-  .landing-inner {
+.landing-inner {
     color: #fff;
     padding-top: 2rem;
     height: 100%;
@@ -73,9 +78,9 @@ a:hover li:hover {
     align-items: left;
     justify-content: left;
     text-align: left;
-  }
+}
 
-  .landing-inner-faqs {
+.landing-inner-faqs {
     color: #fff;
     height: 100%;
     width: 80%;
@@ -86,56 +91,70 @@ a:hover li:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-  }
+}
 
-  .fat {
-      font-weight: 900;
-  }
+.fat {
+    font-weight: 900;
+}
 
-  .kinda-fat {
-      font-weight: 700;
-  }
+.kinda-fat {
+    font-weight: 700;
+}
 
-  .not-fat {
+.not-fat {
     font-weight: 500;
 }
 
-  .thin {
-      font-weight: 300;
-  }
+.thin {
+    font-weight: 300;
+}
 
-  footer {
+footer {
     background-color: black;
     overflow: auto;
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 18%, rgba(25,17,7,1) 42%, rgba(115,95,67,1) 72%, rgba(181,128,51,1) 85%, rgba(251,177,70,1) 100%);
-  }
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 18%, rgba(25, 17, 7, 1) 42%, rgba(115, 95, 67, 1) 72%, rgba(181, 128, 51, 1) 85%, rgba(251, 177, 70, 1) 100%);
+}
 
-  .parralax-text {
-        color: white;
-        font-weight: 700;
-        text-shadow: 0 0 10px #fff;
-        height: 100%;
-        width: 80%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-  }
+.parralax-text {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 10px #fff;
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
-  .map {
+.faqs-container {
+    height: unset !important;
+}
+
+.map {
     height: 50vh;
     filter: grayscale(100%) invert(92%) contrast(83%);
-  }
+}
 
-  .form-submit {
-    padding: 1rem; 
-    border-style: solid; 
-    color: orange; 
-    height: 3rem; 
-    border-radius: 15px; 
-    border-color: orange; 
+.form-submit {
+    padding: 1rem;
+    border-style: solid;
+    color: orange;
+    height: 3rem;
+    border-radius: 15px;
+    border-color: orange;
     border-width: 1px;
-  }
+}
+
+body nav .sidenav-trigger {
+    margin: 0px;
+}
+
+@media(max-width: 991px) {
+    .mobile-margin-bottom {
+        margin-bottom: 100px;
+    }
+}
