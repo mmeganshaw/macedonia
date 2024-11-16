@@ -4,6 +4,7 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 
 const app = express();
+// testing updates
 
 app.engine("handlebars", exphbs())
 app.set("view engine", 'handlebars');
@@ -16,27 +17,27 @@ const PORT = process.env.PORT || 5000;
 
 app.use('/public', express.static(path.join(__dirname, '/public')));
 
-app.get('/', (req,res) => {
-    res.render('home', {layout: false});
+app.get('/', (req, res) => {
+    res.render('home', { layout: false });
 })
 app.get('/faqs', (req, res) => {
-    res.render('faqs', {layout: false});
+    res.render('faqs', { layout: false });
 })
 
 app.get('/location', (req, res) => {
-    res.render('location', {layout: false});
+    res.render('location', { layout: false });
 })
 
 app.get('/pricing', (req, res) => {
-    res.render('pricing', {layout: false});
+    res.render('pricing', { layout: false });
 })
 
-app.get('/contact', (req,res) => {
-    res.render('contact', {layout: false});
+app.get('/contact', (req, res) => {
+    res.render('contact', { layout: false });
 })
 
-app.get('/thank-you', (req,res) => {
-    res.render('thankyou', {layout: false});
+app.get('/thank-you', (req, res) => {
+    res.render('thankyou', { layout: false });
 })
 
 
